@@ -5,7 +5,8 @@ public class Link {
 		for(int i=0; i<10; i++) {
 			test.insert(i);
 		}
-		test.printAll();
+		//test.printAll();
+		test.search_from_head(3);
 	}
 
 }
@@ -30,8 +31,8 @@ class Node{
 	public void setPrev(Node N) {
 		this.prev = N;
 	}
-	public void getValue() {
-		System.out.println("Node value: "+this.value);
+	public int getValue() {
+		return this.value;
 	}
 	
 }
@@ -64,9 +65,35 @@ class NodeMgmt{
 	public void printAll() {
 		Node N = this.head;
 		while(N != null) {
-			N.getValue();
-			N=N.getNext();
-			
+			System.out.println("Node value: "+N.getValue());
+			N=N.getNext();		
 		}
 	}
+	public void search_from_head(int value) {
+		if (this.head == null)
+			System.out.println("빈 NodeManager");
+		Node S = this.head;
+		while(S != null) {
+			if(S.getValue() == value) {
+				System.out.println("찾음");
+				break;
+			}
+			else
+				S = S.getNext();
+		}
+		
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
