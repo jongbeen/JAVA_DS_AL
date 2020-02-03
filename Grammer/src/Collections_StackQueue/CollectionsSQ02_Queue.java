@@ -3,11 +3,11 @@ package Collections_StackQueue;
 import java.util.LinkedList;
 import java.util.Queue;
 
-//Queue 인터페이스로 선언해  LinkedList 객체 생성
+//					Queue 인터페이스로 선언해  LinkedList 객체 생성
 
-//offer(E item) - 객체 삽입  (근데 add도 되던데...?)
-//peek() - 첫번째 객체 리턴, 삭제 X 
-//poll() - 첫번째 객체 리턴, 삭제 O
+//					offer(E item) - 객체 삽입  (근데 add도 되던데...?)
+//					peek() - 첫번째 객체 리턴, 삭제 X 
+//					poll() - 첫번째 객체 리턴, 삭제 O
 
 
 public class CollectionsSQ02_Queue {

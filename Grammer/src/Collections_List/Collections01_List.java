@@ -6,6 +6,17 @@ import java.util.Arrays;
 
 // ArrayList, Vector, LinkedList 모두 List 컬렉션에서 공통적으로 사용 가능한 메소드들이다.
 
+/*
+				ArrayList에서 사용되는 메소드		HashSet과 비교하니 get이 대신 Iterator, 
+				add							중복 허용X 라는 차이 외에는 큰 차이 X
+				get
+				remove
+				add(index, value)
+				contains(value)
+				isEmpty()
+				Arrays.asList()
+				
+*/
 public class Collections01_List {
 	public static void main(String[] args) {
 		List<String> United = new ArrayList<>();
